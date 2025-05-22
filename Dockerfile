@@ -20,6 +20,7 @@ RUN apt-get update -qq && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Set production environment
+ENV SECRET_KEY_BASE=fdfd63ea756913f2d512691d084d98fa467910151201dbf0d8e023ee441283844cdbf5d4728d29dd2dc67e8d59d12e157876470e3bbd41fad719fe9afb7b5a9c
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
     BUNDLE_PATH="/usr/local/bundle" \
